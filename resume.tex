@@ -6,6 +6,7 @@
     \usepackage[utf8]{inputenc}
     \usepackage[T1]{fontenc}
     \usepackage{scrextend}
+    \usepackage{graphicx,calc}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
@@ -17,6 +18,15 @@
 
 % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand*{\img}[1]{%
+    \raisebox{-.3\baselineskip}{%
+        \includegraphics[
+        height=100px,
+        width=\baselineskip,
+        keepaspectratio,
+        ]{#1}%
+    }%
+}
 \newcommand{\area} [2] {
     \vspace*{-9pt}
     \begin{verse}
@@ -32,6 +42,7 @@
 \newcommand{\header} [1] {
     {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
     \vspace*{-6pt} \lineunder
+    \vspace{2mm}
 }
 
 \newcommand{\employer} [3] {
@@ -77,11 +88,20 @@
 	Boston $\cdot$ golgobot@gmail.com $\cdot$ 857-383-9355\\
 \end{center}
 
-%==== Education ====%
-\header{Education}
-\textbf{Duke University}\hfill Durhan, NC\\
-BS Electrical Engineering\\
+%==== Experience ====%
+\header{Skills}
+
+Languages: C++, TypeScript, JavaScript, Java, Python
+
 \vspace{2mm}
+
+Software: Qt/QML/WebEngine, Poco, Boost, Buildroot, Node.js, v8, Electron, 
+    Android
+
+
+
+
+\vspace{4mm}
 
 %==== Experience ====%
 \header{Experience}
@@ -94,12 +114,18 @@ BS Electrical Engineering\\
     \textit{Chief Architect} \hfill April 2018 - June 2018\\
     \vspace{-1mm}
     \begin{itemize} \itemsep 1pt
-        \item Did stuff
+        \item Technical lead for a team of 50 engineers.
+        \item Set technology vision and direction for the company.
+        \item Sole technical stakeholder for all product decisions.
     \end{itemize}
     \textit{Chief Robot Architect} \hfill November 2017 - April 2018\\
     \vspace{-1mm}
     \begin{itemize} \itemsep 1pt
-        \item Other stuff
+        \item Lead a team of 10 engineers in a total rewrite of Jibo's embedded
+            software stack, called "Project Phoenix".
+        \item Set overall architectural direction of Phoenix and developed
+            a transition plan to fast track it to production.
+        \item Lead developer for Jibo's new graphics system built using Qt.
     \end{itemize}
     \textit{Head of SDK} \hfill Jan 2015 - November 2017\\
     \vspace{-1mm}
@@ -113,8 +139,8 @@ BS Electrical Engineering\\
     \vspace{-1mm}
     \begin{itemize} \itemsep 1pt
         \item Second employee and first engineer at Jibo
-        \item Ideated and pitched
-        \item Responsible for building 2 prototype robots. Worked full stack writing 
+        \item Ideated and pitched concepts to investors
+        \item Responsible for building 2 prototype robots. Worked full stack, writing 
         everything from microprocessor firmware to high level behavioral engines.
     \end{itemize}
 \end{addmargin}
@@ -137,6 +163,51 @@ BS Electrical Engineering\\
 \begin{itemize} \itemsep 1pt
     \item Client and server side engineer for CafeWorld and CityVille.
 \end{itemize}
+\end{addmargin}
+
+%==== Disney =====%
+\textbf{\textsc{Disney}} \hfill Los Angeles, CA\\
+\vspace{2mm}
+
+\begin{addmargin}[1em]{0em}
+
+\textit{Senior Software Engineer} \hfill November 2007 - Match 2010\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Developed and maintained high performance real-time server side
+        technologies for current and unannounced virtual worlds.
+    \item A lead developer on World of Car Online, a Flash based 3D MMO for kids 
+        (discontinued).
+    \item Developed a custom server and client physics engine, hand-tuned for low 
+        end machines.
+    \item Developed AI and an AI scripting system.
+    \item Designed and developed circuit racing and racing with friends.
+    \item Designed and developed the game's race career and treadmill system.
+    \item Co-wrote the games questing and questing scripting system
+    \item Inventor of ToyBridge, a framework for communication between a web 
+        deployed Flash application and hardware devices
+    \item Member of ToyMorrow, an interdivisional high-tech toys of the future think 
+        tank.
+\end{itemize}
+
+\end{addmargin}
+
+%==== Xplana =====%
+\textbf{\textsc{Xplana Learning}} \hfill Boston, CA\\
+\vspace{2mm}
+
+\begin{addmargin}[1em]{0em}
+
+\textit{Senior Software Engineer} \hfill November 2007 - Match 2010\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Led a team of client side engineers in developing online learning software.
+    \item Developed an online customizable ebook, and math learning courses, which 
+        won a Codie award for "Best Mathematics Instructional Solution."
+    \item Participated in overall company strategy, and pushed new ideas and technology 
+        to keep the products on the cutting edge.
+\end{itemize}
+
 \end{addmargin}
 
 \header{Patents}
@@ -186,7 +257,12 @@ For the development of the RAD UI framework
 
 \textbf{Disney Inventor Award} \hfill Disney\\
 Walt Disney Inventor Award for ToyBridge
-\vspace*{2mm}
+\vspace*{4mm}
 
-\ 
+%==== Education ====%
+\header{Education}
+\textbf{Duke University}\hfill Durhan, NC\\
+BS Electrical Engineering\\
+\vspace{2mm}
+
 \end{document}
