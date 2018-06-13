@@ -1,0 +1,125 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Jonathan Ross}}\\
+	Boston $\cdot$ golgobot@gmail.com $\cdot$ 857-383-9355\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Duke University}\hfill Durhan, NC\\
+BS Electrical Engineering\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Jibo, Inc} \hfill Boston, MA\\
+\textit{Chief Architect} \hfill April 2018 | June 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Did stuff
+\end{itemize}
+\textbf{Jibo, Inc} \hfill Boston, MA\\
+\textit{Chief Robot Architect} \hfill November 2017 | April 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Other stuff
+\end{itemize}
+
+
+
+
+
+\header{Patents}
+\textbf{Apparatus and methods for providing a persistent companion device}\\
+United States Patent Application 20,150,314,454\\
+Filed July 15th, 2015\\
+
+\vspace*{2mm}
+\textbf{Persistent companion device configuration and deployment platform}\\
+United States Patent Application 20,170,206,064\\
+Filed March 30th, 2017
+
+\vspace*{2mm}
+\textbf{System and Method for Integrated Hardware Platform for Flash Applications
+with Distributed Objects}\\
+Patent No.: US 8,924,989 B2\\
+Granted December 30th, 2014 
+
+\vspace*{2mm}
+
+\ 
+\end{document}
