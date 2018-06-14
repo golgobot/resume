@@ -1,32 +1,29 @@
 \documentclass[a4paper]{article}
-    \usepackage{fullpage}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{textcomp}
-    \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
-    \usepackage{scrextend}
-    \usepackage{graphicx,calc}
-    \textheight=10in
-    \pagestyle{empty}
-    \raggedright
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{scrextend}
+\usepackage{graphicx,calc}
+\usepackage{fontawesome}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[
+    bookmarks, colorlinks, breaklinks, unicode,
+    pdftitle={Jonathan Ross - Resume},
+    pdfauthor={Jonathan Ross},
+    pdfproducer={http://donahut.github.io}
+]{hyperref}
 
-    %\renewcommand{\encodingdefault}{cg}
-%\renewcommand{\rmdefault}{lgrcmr}
-
+\textheight=10in
+\pagestyle{empty}
+\raggedright
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue}
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
 % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand*{\img}[1]{%
-    \raisebox{-.3\baselineskip}{%
-        \includegraphics[
-        height=100px,
-        width=\baselineskip,
-        keepaspectratio,
-        ]{#1}%
-    }%
-}
 \newcommand{\area} [2] {
     \vspace*{-9pt}
     \begin{verse}
@@ -76,27 +73,40 @@
 }
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
-    \begin{document}
-\vspace*{-40pt}
+
+
+\begin{document}
+\vspace*{-50pt}
 
     
 
 %==== Profile ====%
-\vspace*{-10pt}
-\begin{center}
-	{\Huge \scshape {Jonathan Ross}}\\
-	Boston $\cdot$ golgobot@gmail.com $\cdot$ 857-383-9355\\
-\end{center}
 
-%==== Experience ====%
+\begin{minipage}[t]{0.5\textwidth}
+    {\Huge \scshape {Jonathan Ross}}
+\end{minipage}
+\begin{minipage}[t]{0.48\textwidth}
+    \flushright 
+    \begin{tabular}[h]{ll}
+        \faEnvelope & \href{mailto:golgobot@gmail.com}{golgobot@gmail.com}\\
+        \faPhone    & 857-383-9355\\
+        \faGithub   & \href{http://www.github.com/golgobot}{github.com/golgobot}\\
+        \faLinkedin & \href{http://www.linkedin.com/in/jonathan-louis-ross/}{linkedin.com/in/jonathan-louis-ross}
+    \end{tabular}
+\end{minipage}
+
+
+\vspace{4mm}
+
+%==== Skills ====%
 \header{Skills}
 
-Languages: C++, TypeScript, JavaScript, Java, Python
+Languages: C++, TypeScript, JavaScript, Java, Python\\
 
 \vspace{2mm}
 
 Software: Qt/QML/WebEngine, Poco, Boost, Buildroot, Node.js, v8, Electron, 
-    Android
+    Android, HTML5/CSS
 
 
 
@@ -122,9 +132,9 @@ Software: Qt/QML/WebEngine, Poco, Boost, Buildroot, Node.js, v8, Electron,
             business partners.
         \item Restructured team and appointed architectural leads to most effectively
             cover all major components of the tech stack.
-        \item Designed large key components including dynamic proactivity, reminders,
-            3rd party cloud integration and authentication models, sandboxed on-robot
-            skills, and hybrid cloud/on-robot skills.
+        \item Designed large key components including dynamic proactivity, reminders, 3rd party
+            cloud push, 3rd party cloud integration and authentication models, 
+            sandboxed cloud-hosted on-robot skills, and hybrid cloud/on-robot skills.
         \item Spearheaded unification of cloud infrastructure to enable faster cross stack
             development of new features.
         
@@ -144,15 +154,15 @@ Software: Qt/QML/WebEngine, Poco, Boost, Buildroot, Node.js, v8, Electron,
     \begin{itemize} \itemsep 1pt
         \item Overall architect and SDK team lead.
         \item Hired, built, and led a talented team of 5 engineers and 2 QA testers 
-        responsible for the development of Jibo’s SDK, which include visual behavior editors, 
-        NLU and dialog tools, animation tools, and a robot simulator.
+            responsible for the development of Jibo’s SDK, which include visual behavior 
+            editors, NLU and dialog tools, animation tools, and a robot simulator.
     \end{itemize}
-    \textit{Software Engineer} \hfill November 2012 - Jan 2015\\
+    \textit{Software Architect} \hfill November 2012 - Jan 2015\\
     \vspace{-1mm}
     \begin{itemize} \itemsep 1pt
         \item Second employee and first engineer at Jibo.
         \item Ideated and pitched concepts/demos to investors.
-        \item Responsible for building 2 prototype robots, one of which stared in Jibo's
+        \item Responsible for building 2 prototype robots, one of which starred in Jibo's
             Indigogo campaign.
         \item Worked full stack, writing everything from microprocessor firmware to 
             high level behavioral engines.
@@ -190,16 +200,13 @@ Software: Qt/QML/WebEngine, Poco, Boost, Buildroot, Node.js, v8, Electron,
 \begin{itemize} \itemsep 1pt
     \item Developed and maintained high performance real-time server side
         technologies for current and unannounced virtual worlds.
-    \item A lead developer on World of Car Online, a Flash based 3D MMO for kids 
-        (discontinued).
-    \item Developed a custom server and client physics engine, hand-tuned for low 
-        end machines.
-    \item Developed AI and an AI scripting system.
-    \item Designed and developed circuit racing and racing with friends.
-    \item Designed and developed the game's race career and treadmill system.
-    \item Co-wrote the games questing and questing scripting system
+    \item A lead developer on \textit{World of Car Online}, a Flash based 3D MMO for kids.
+        Developed custom server and client rigid body physics engine, hand-tuned for low 
+        end machines; AI and an AI scripting system; single and multi-player Circuit Racing;
+        and the race career and treadmill system. Also co-wrote the game's questing and 
+        questing scripting system.
     \item Inventor of ToyBridge, a framework for communication between a web 
-        deployed Flash application and hardware devices
+        deployed Flash application and hardware devices.
     \item Member of ToyMorrow, an interdivisional high-tech toys of the future think 
         tank.
 \end{itemize}
@@ -219,7 +226,7 @@ Software: Qt/QML/WebEngine, Poco, Boost, Buildroot, Node.js, v8, Electron,
     \item Developed an online customizable ebook, and math learning courses, which 
         won a Codie award for "Best Mathematics Instructional Solution."
     \item Participated in overall company strategy, and pushed new ideas and technology 
-        to keep the products on the cutting edge.
+        to keep products on the cutting edge.
 \end{itemize}
 
 \end{addmargin}
@@ -275,16 +282,18 @@ Building a Social Robot with Atom and Electron
 Building Skills for a Conversational Robot 
 \vspace*{2mm}
 
+\pagebreak[3]
+
 \textbf{Exploring Computer Science} \hfill April 2010\\
+\begin{addmargin}[0em]{4em}
 Program targeting high school students meant to increase the number of
 minorities and women who gain exposure to engineering.
+\end{addmargin}
 \vspace*{2mm}
 
 \textbf{USC GamePipe Laboratory} \hfill November 2009\\
 Speaker for seminar series on game AI and physics 
 \vspace*{4mm}
-
-\pagebreak
 
 \header{Awards}
 
