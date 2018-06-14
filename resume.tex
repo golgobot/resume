@@ -21,6 +21,7 @@
 \raggedright
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue}
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+\pagestyle{plain}
 
 % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
 
@@ -83,12 +84,13 @@
 %==== Profile ====%
 
 \begin{minipage}[t]{0.5\textwidth}
+    \vspace{-24pt}
     {\Huge\scshape{Jonathan Ross}}\\
     Boston, MA
 \end{minipage}
 \begin{minipage}[t]{0.48\textwidth}
     \flushright 
-    \begin{tabular}[h]{ll}
+    \begin{tabular}[h]{ll@{}}
         \faEnvelope & \href{mailto:golgobot@gmail.com}{golgobot@gmail.com}\\
         \faPhone    & 857-383-9355\\
         \faGithub   & \href{http://www.github.com/golgobot}{github.com/golgobot}\\
@@ -99,10 +101,9 @@
 
 \vspace{4mm}
 
-%==== Skills ====%
+%==== Technical Skills ====%
 \header{Technical Skills}
-\begin{tabular}[h]{ll}
-
+\begin{tabular}[h]{@{}ll}
 Languages: &            C/C++, TypeScript, JavaScript, Java, Python\\[4pt]
 Graphics: &             Qt/QML/WebEngine, GStreamer, Ogre3D, Pixi.js, Three.js\\[4pt]
 Vision: &               OpenCV\\[4pt]
@@ -111,8 +112,8 @@ Embedded: &             Buildroot, Arduino, Raspberry Pi\\[4pt]
 Web: &                  HTML5/CSS/JS, Electron, RESTful design\\[4pt]
 Cloud: &                Node.js, AWS, Docker, Microservices Architecture\\[4pt]
 NLU: &                  DialogFlow\\[4pt]
-Tools: &                Git, GitHub, Jira, Agile (Scrum)
-
+Tools: &                Git, GitHub, Jira, Agile (Scrum)\\[4pt]
+Build: &                Make, CMake, QMake, Gulp
 \end{tabular}
 
 \vspace{4mm}
@@ -273,6 +274,8 @@ Patent No.: US 8,924,989 B2\\
 Granted December 30th, 2014 \\
 \vspace*{4mm}
 
+\pagebreak[3]
+
 \header{Speaking Events}
 \textbf{Babson} \hfill November 2017 - Present\\
 Recurring guest lecturer for entrepreneurship classes 
@@ -283,7 +286,7 @@ Building a Social Robot with Atom and Electron
 \vspace*{2mm}
 
 \textbf{SpeechTek} \hfill August 2015\\
-Building Skills for a Conversational Robot 
+Building Skills for a Conversational Robot
 \vspace*{2mm}
 
 \pagebreak[3]
@@ -291,7 +294,7 @@ Building Skills for a Conversational Robot
 \textbf{Exploring Computer Science} \hfill April 2010\\
 \begin{addmargin}[0em]{4em}
 Program targeting high school students meant to increase the number of
-minorities and women who gain exposure to engineering.
+minorities and women who gain exposure to engineering
 \end{addmargin}
 \vspace*{2mm}
 
