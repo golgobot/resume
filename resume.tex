@@ -116,9 +116,9 @@ technical design.
 Languages: &            C/C++, TypeScript, JavaScript, Java, Python\\[4pt]
 Graphics: &             Qt/QML/WebEngine, GStreamer, Ogre3D, Pixi.js, Three.js\\[4pt]
 Vision: &               OpenCV\\[4pt]
-Frameworks/Libs: &      STL, Boost, Poco, ALSA, v8\\[4pt]
+Frameworks/Libs: &      STL, Boost (msm, mpl), PEGTL, Eigen, Poco, ALSA, v8\\[4pt]
 Embedded: &             Buildroot, Arduino, Raspberry Pi, Android\\[4pt]
-Web: &                  HTML5/CSS/JS, React.js, Electron, RESTful design\\[4pt]
+Web: &                  Emscripten, HTML5/CSS/JS, React.js, Electron, RESTful design\\[4pt]
 Cloud: &                Node.js, Tomcat, AWS, Docker, Microservices Architecture\\[4pt]
 NLU: &                  DialogFlow\\[4pt]
 Tools: &                Git, GitHub, Jira, Agile (Scrum)\\[4pt]
@@ -130,6 +130,35 @@ Build: &                Make, CMake, QMake, Gulp
 %==== Experience ====%
 \header{\faBriefcase \hspace{1pt} Experience}
 \vspace{1mm}
+
+\textbf{\textsc{Amazon}} \hfill Cambridge, MA\\
+\vspace{2mm}
+
+\begin{addmargin}[1em]{0em}
+    \textit{Seniot Software Engineer} \hfill September 2018 - Present\\
+    \vspace{-1mm}
+    \begin{itemize} \itemsep 1pt
+        \item Main developer and architect of the web \href{https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/understand-apl.html}{APL} renderer, 
+            used to display APL on TVs, XBox, and in the \href{https://developer.amazon.com/alexa/console/ask/displays}{APL authoring tool} and Alexa web simulator.
+        \item Lead architect of the \href{https://www.amazon.com/dp/B07VHZ41L8/}{Echo Show 10's} motion capabilities.
+        \begin{itemize}
+            \item Build out all motor/motion features, safety features, motion policies, vision and audio integrations.
+            \item Designed and built automatic motion CX for all Alexa experiences.
+            \item Worked with multiple internal teams to integration 1p skills: Alexa Guard, Drop in, Alexa Video Calls, Photos, and Alexa's demo team.
+        \end{itemize}
+        \item Designed the specification for and built out 3p APIs for Echo Show 10s new capabilities, which allows
+            3p developers to sense and react to the environment in their skills. This includes
+        \begin{itemize}
+            \item APL extensions for \href{https://developer.amazon.com/de-DE/docs/alexa/alexa-presentation-language/apl-ext-smart-motion.html}{Smart Motion} 
+                and \href{https://developer.amazon.com/de-DE/docs/alexa/alexa-presentation-language/apl-ext-entity-sensing.html}{Entity Sensing} APL extensions.
+            \item Web API for Games \href{https://developer.amazon.com/en-US/docs/alexa/web-api-for-games/alexa-games-extensions-smartmotion.html}{Smart Motion}
+                and \href{https://developer.amazon.com/en-US/docs/alexa/web-api-for-games/alexa-games-extensions-entitysensing.html}{Entity Sensing} Extensions.
+        \end{itemize}
+        \item Architected the \href{https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/test-apl-skills-dev-console.html#use-the-smart-motion-simulator}{Echo Show 10's} 
+            web simulator, built with Emscripten.
+    \end{itemize}
+
+\end{addmargin}
 
 \textbf{\textsc{Jibo, Inc}} \hfill Boston, MA\\
 \vspace{2mm}
